@@ -1,0 +1,289 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Study/Automatization/Corse work/Corse_work_morse
+vcd
+Z1 !s110 1639080948
+!i10b 1
+!s100 =CUJNU1[K:KnY?NmWLjCV2
+IKei2cLlK9_5][4l;VNKX23
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1638189798
+8D:/Study/Automatization/Corse work/Corse_work_morse/cd.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/cd.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1639080948.000000
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/cd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/cd.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcd_tb
+R1
+!i10b 1
+!s100 ]JPZ2CJVEVGFBE<z1egGm3
+I7GEK=6=BbXn5DLROM<>J23
+R2
+R0
+w1638189688
+8D:/Study/Automatization/Corse work/Corse_work_morse/cd_tb.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/cd_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/cd_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/cd_tb.v|
+!i113 1
+R5
+R6
+vcontroller_tb
+R1
+!i10b 1
+!s100 EnD8]8Ue8`ggNhN^_iUSe3
+I6GY=QYf;^Sb@6<RB71kZ_3
+R2
+R0
+w1639080945
+8D:/Study/Automatization/Corse work/Corse_work_morse/controller_tb.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/controller_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/controller_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/controller_tb.v|
+!i113 1
+R5
+R6
+vdc
+R1
+!i10b 1
+!s100 9>PRcN3Dg;eBF?5:YR>Sn1
+IfWIOBgcEQFBa>noBo?89F2
+R2
+R0
+w1638190614
+8D:/Study/Automatization/Corse work/Corse_work_morse/dc.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/dc.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/dc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/dc.v|
+!i113 1
+R5
+R6
+vdc_tb
+Z7 !s110 1639080949
+!i10b 1
+!s100 ViEVCTQU52fKYJkYiJS@K0
+IYz2_@:?8Xm814gjmFeGV_1
+R2
+R0
+w1638190546
+8D:/Study/Automatization/Corse work/Corse_work_morse/dc_tb.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/dc_tb.v
+L0 5
+R3
+r1
+!s85 0
+31
+Z8 !s108 1639080949.000000
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/dc_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/dc_tb.v|
+!i113 1
+R5
+R6
+vinput_ROM
+R7
+!i10b 1
+!s100 mUzJ47ZcmnY_oefP11ZWC1
+IejO1j801_A4?k076B[Km[3
+R2
+R0
+w1638126504
+8D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/input_ROM.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM.v|
+!i113 1
+R5
+R6
+ninput_@r@o@m
+vinput_ROM_tb
+R7
+!i10b 1
+!s100 3knd``aAAYzb61S[6R8BG2
+Ieldhhi=]jM><13YC?o7o42
+R2
+R0
+w1638124438
+8D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM_tb.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/input_ROM_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM_tb.v|
+!i113 1
+R5
+R6
+ninput_@r@o@m_tb
+vIOD
+R7
+!i10b 1
+!s100 6fg]RM>5>mGOCW^@kZag60
+IOjnT<cC?=1e>f^L[<Ib7a3
+R2
+R0
+w1638224248
+8D:/Study/Automatization/Corse work/Corse_work_morse/IOD.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/IOD.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/IOD.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/IOD.v|
+!i113 1
+R5
+R6
+n@i@o@d
+vIOD_tb
+R7
+!i10b 1
+!s100 MEkeFY_be:R>K]V`Sa:l30
+IUlUD[9YzEgM7h30JlX=D;1
+R2
+R0
+w1638222359
+8D:/Study/Automatization/Corse work/Corse_work_morse/IOD_test.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/IOD_test.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/IOD_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/IOD_test.v|
+!i113 1
+R5
+R6
+n@i@o@d_tb
+vnco_advanced
+R7
+!i10b 1
+!s100 La@B2A0ngUPR^98nU`odM0
+IlGGUn^f;5L@<<V89]8]8@1
+R2
+R0
+w1638222101
+8D:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced.v
+L0 2
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced.v|
+!i113 1
+R5
+R6
+vnco_advanced_tb
+!s110 1639080950
+!i10b 1
+!s100 F@YG59@jLhPT4TZYm]Y`I2
+IRoHQM97LhUY5LFSTeVXDJ1
+R2
+R0
+w1638199723
+8D:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced_tb.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced_tb.v|
+!i113 1
+R5
+R6
+voutput_ROM
+R1
+!i10b 1
+!s100 ]TbZa49H8Kf9`cLhB_e2R0
+IGo]XVUBDJn0>_XjUA3YNn0
+R2
+R0
+w1638126611
+8D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/output_ROM.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM.v|
+!i113 1
+R5
+R6
+noutput_@r@o@m
+voutput_ROM_tb
+R1
+!i10b 1
+!s100 UMmdKToV?IZAH9F@G=AMH2
+I7oE@S78eXEM2_XoWVGFfP1
+R2
+R0
+w1638126864
+8D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM_tb.v
+FD:/Study/Automatization/Corse work/Corse_work_morse/output_ROM_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM_tb.v|
+!i113 1
+R5
+R6
+noutput_@r@o@m_tb

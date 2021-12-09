@@ -1,0 +1,35 @@
+
+
+###########################
+# Simple modelsim do file #
+###########################
+
+# Delete old compilation results
+if { [file exists "work"] } {
+    vdel -all
+}
+
+# Create new modelsim working library
+
+vlib work
+
+# Compile all the Verilog sources in current folder into working library
+
+vlog  nco_advanced.v nco_advanced_tb.v
+
+# Open testbench module for simulation
+
+vsim -novopt nco_advanced_tb
+
+# Add all testbench signals to waveform diagram
+
+add wave /nco_advanced_tb/*
+add wave -radix binary /nco_advanced_tb/gen_inst/phase
+add wave -radix unsigned /nco_advanced_tb/gen_inst/phase_step_in
+
+onbreak resume
+
+# Run simulation
+run -all
+
+wave zoom full

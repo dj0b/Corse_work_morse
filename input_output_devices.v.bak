@@ -1,0 +1,40 @@
+
+module IOD(clk1, clk2, rst, DW, ENW, DR, ENR, in, out);
+
+input clk1, clk2, rst, ENW, ENR, in;
+input [23:0] DW;
+output out;
+output [23:0] DR;
+
+
+reg     [24:0]   shift_reg_in;
+
+reg     [24:0]   shift_reg_out;
+                                        
+always @(posedge clk1, negedge rst)
+
+    if (~rst) begin
+        shift_reg_out <= 0;
+    end else begin
+        shift_reg_out <= DW;
+    end
+    
+endmodule
+
+always @(posedge clk2, negedge ENW)
+
+    if (~ENW) begin
+        shift_reg_out <= 0;
+    end else begin
+        shift_reg_out <= {shift_reg_out[22:0], shift_reg_out[23]};
+    end
+    
+endmodule
+
+
+
+
+
+
+
+endmodule
