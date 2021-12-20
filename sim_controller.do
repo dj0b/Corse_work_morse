@@ -15,7 +15,7 @@ vlib work
 
 # Compile all the Verilog sources in current folder into working library
 
-vlog  nco_advanced.v input_ROM.v cd.v IOD.v dc.v output_ROM.v controller_tb.v
+vlog  nco_advanced.v input_ROM.v cd.v IOD.v dc.v output_ROM.v controller.v controller_tb.v
 
 # Open testbench module for simulation
 
@@ -26,8 +26,8 @@ vsim -novopt work.controller_tb
 add wave /controller_tb/o_clk1
 add wave /controller_tb/o_clk2
 add wave /controller_tb/o_out
-add wave -radix unsigned /controller_tb/i_adr
-add wave -radix ASCII /controller_tb/o_data
+add wave -radix ASCII /controller_tb/data_t
+add wave -radix ASCII /controller_tb/data_r
  
 
 onbreak resume

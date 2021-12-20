@@ -26,11 +26,8 @@ vsim -novopt work.controller_tb
 add wave /controller_tb/o_clk1
 add wave /controller_tb/o_clk2
 add wave /controller_tb/o_out
-add wave /controller_tb/o_r
-add wave -radix unsigned /controller_tb/i_adr
-add wave -radix ASCII /controller_tb/o_data
-add wave -radix hexadecimal /controller_tb/o_data
-add wave -radix binary /controller_tb/o_y
+add wave -radix ASCII /controller_tb/data_t
+add wave -radix ASCII /controller_tb/data_r
  
 
 onbreak resume

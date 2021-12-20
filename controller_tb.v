@@ -7,38 +7,42 @@ parameter T_dot = 1000;//ns
 parameter PERIOD = 20;//clk from generator
 parameter K = T_dot/PERIOD;
 
-reg  i_clk, i_rst, i_en;
+reg  i_clk, i_rst;
+
 wire o_clk1, o_clk2;
 
-wire i_in, o_out;
+wire o_cst;
+wire [15:0] o_adrT;
+wire [7:0] data_t;
 
-reg [16:0] i_adr;
-wire [7:0] o_data;
+wire [23:0] o_ycd;
 
-wire [23:0] o_y;
+wire o_ENW, o_ENR, o_out; 
 
-wire [23:0] o_r;
+wire [23:0] o_xdc;
 
-wire [7:0] i_data;
+wire o_csr;
+wire [15:0] o_adrR;
+wire [7:0] data_r;
+
 
 reg     [7:0]  rom[4095:0];
 
-nco_advanced #(.K(K))  gen_inst(.clk_in(i_clk), .rst(i_rst), .clk_out1(o_clk1), .clk_out2(o_clk2));
+controller ctrl_inst(.in_clk(i_clk), .rst(i_rst), .DT(data_t), .cst(o_cst), .adrT(o_adrT), .DR(data_r), .csr(o_csr), .adrR(o_adrR), .ENW(o_ENW), .clk1(o_clk1), .clk2(o_clk2), .ENR(o_ENR));
 
+input_ROM rom_inst(.clk(o_clk2), .cs(o_cst), .adr(o_adrT), .data(data_t));
 
-input_ROM rom_inst(.clk(o_clk1), .cs(i_en), .adr(i_adr), .data(o_data));
+cd cd_inst(.clk(o_clk2), .x(data_t), .y(o_ycd));
 
-cd cd_inst(.clk(o_clk1), .en(i_en), .x(o_data), .y(o_y));
+IOD iod_inst(.clk1(o_clk1), .clk2(o_clk2), .rst(i_rst), .DW(o_ycd), .ENW(o_ENW), .DR(o_xdc), .ENR(o_ENR), .in(o_out), .out(o_out));
 
-IOD iod_inst(.clk1(o_clk1), .clk2(o_clk2), .rst(i_rst), .DW(o_y), .ENW(i_en), .DR(o_r), .ENR(i_en), .in(o_out), .out(o_out));
+dc dc_inst(.clk(o_clk2), .x(o_xdc), .y(data_r));
 
-dc dc_inst(.clk(o_clk1), .en(i_en), .x(o_r), .y(i_data));
-
-output_ROM rom_out_inst(.clk(o_clk1), .cs(i_en), .adr(i_adr), .data(i_data));
+output_ROM rom_out_inst(.clk(o_clk2), .cs(o_csr), .adr(o_adrR), .data(data_r));
 
 initial begin
-    forever #(PERIOD) if(i_en) begin
-	rom[i_adr] = i_data;
+    forever #(PERIOD) if(o_csr) begin
+	rom[o_adrR] = data_r;
 	end
 end
 
@@ -47,18 +51,12 @@ initial begin
     forever #(PERIOD/2) i_clk = ~i_clk;
 end
 
-initial begin
-    i_adr = 0;
-    forever @(posedge o_clk2) if(i_en) i_adr = i_adr + 1'b1;
-end
 
 initial begin
-	i_adr = 8'd0;
    	i_rst = 1'b0;
-   	i_en = 1'b0;
-   	@(negedge i_clk) begin i_en = 1'b1; i_rst = 1'b1; end
+   	@(negedge i_clk) i_rst = 1'b1; 
 
-    	repeat (55) @(negedge o_clk2);
+    	repeat (50) @(negedge o_clk2);
 	$writememh("outh.txt", rom);
     	$finish;  
 end

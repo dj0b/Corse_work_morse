@@ -1,16 +1,12 @@
 
-module cd(clk, en, x, y);
-input clk, en;
+module cd(clk, x, y);
+input clk;
 input [7:0] x;
 output reg [23:0] y;
 
 wire sys_clk = clk;
-wire sys_en = en;
 
-always @(posedge sys_clk, negedge sys_en) begin
-if(~sys_en)begin
-	y = 24'b0;
-end else begin
+always @(negedge sys_clk, negedge sys_en) begin
 
 case(x) 
 8'h41	:	y=	24'b	0101110	;
@@ -73,7 +69,7 @@ default y=24'b0;
 
 endcase
 
-end
+
 
 end
 

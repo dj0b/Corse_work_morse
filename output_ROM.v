@@ -3,7 +3,7 @@ module output_ROM(clk, cs, adr, data);
 
 input           clk;
 input		cs;
-input [16:0]	adr;
+input [15:0]	adr;
 input  [7:0]   data;
 
 reg     [7:0]   o_rom[4095:0];

@@ -2,7 +2,7 @@ module input_ROM(clk, cs, adr, data);
 
 input           clk;
 input		cs;
-input [16:0]	adr;
+input [15:0]	adr;
 output  [7:0]   data;
 
 reg     [7:0]   i_rom[4095:0];
@@ -17,7 +17,7 @@ initial $readmemh("inh.txt", i_rom);
 
 always @(posedge sys_clk, negedge sys_cs) begin
     if(~sys_cs) begin
-        ascii <= 8'h0;
+        ascii <= 8'hz;
     end else begin
         ascii <= i_rom[adr];
     end

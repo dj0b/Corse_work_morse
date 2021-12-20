@@ -15,6 +15,4 @@ always @(posedge sys_clk, negedge sys_cs) begin
         o_rom[adr] <= data;
 end
 
-initial $writememh("outh.txt", o_rom);
-
 endmodule

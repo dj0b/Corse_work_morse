@@ -1,20 +1,20 @@
 // memory data file (do not edit the following line - required for mem load use)
 // instance=/controller_tb/rom
 // format=hex addressradix=h dataradix=h version=1.0 wordsperline=1 noaddress
+xx
 00
 20
+20
 49
+27
+4d
+20
 54
-20
-49
-53
-20
-41
-4c
-49
-56
+59
+52
 45
-ff
+44
+21
 20
 20
 20
@@ -52,11 +52,11 @@ ff
 20
 20
 20
-20
-20
-20
-20
-20
+xx
+xx
+xx
+xx
+xx
 xx
 xx
 xx
