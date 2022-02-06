@@ -11,7 +11,7 @@ reg [16:0] i_adr;
 wire [7:0] o_data;
 
 reg  i_en_cd;
-wire [23:0] o_y_cd);
+wire [23:0] o_y_cd;
 
 reg  i_en_dc;
 wire [7:0] o_y_dc;

@@ -10,15 +10,13 @@ reg  i_clk, i_cs;
 reg [16:0] i_adr;
 wire [7:0] o_data;
 
-reg  i_en_cd;
 wire [23:0] o_y_cd;
 
-reg  i_en_dc;
 wire [7:0] o_y_dc;
 
 input_ROM rom_inst(.clk(i_clk), .cs(i_cs), .adr(i_adr), .data(o_data));
-cd cd_inst(.clk(i_clk), .en(i_en_cd), .x(o_data), .y(o_y_cd));
-dc dc_inst(.clk(i_clk), .en(i_en_dc), .x(o_y_cd), .y(o_y_dc));
+cd cd_inst(.clk(i_clk), .x(o_data), .y(o_y_cd));
+dc dc_inst(.clk(i_clk), .x(o_y_cd), .y(o_y_dc));
 
 
 initial begin
@@ -34,9 +32,7 @@ end
 initial begin
 	i_adr = 8'd0;
    	i_cs = 1'b0;
-   	i_en_cd = 1'b0;
-	i_en_dc = 1'b0;
-   	@(negedge i_clk) begin i_en_cd = 1'b1; i_en_dc = 1'b1; i_cs = 1'b1; end
+   	@(negedge i_clk) i_cs = 1'b1;
 	
 	repeat (52) @(negedge i_clk);
 	

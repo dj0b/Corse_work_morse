@@ -24,7 +24,6 @@ vsim -novopt work.cd_tb
 
 add wave /cd_tb/i_clk
 add wave /cd_tb/i_cs
-add wave /cd_tb/i_en
 add wave -radix unsigned /cd_tb/i_adr
 add wave -radix ASCII /cd_tb/o_data
 add wave -radix hexadecimal /cd_tb/o_data

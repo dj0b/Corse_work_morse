@@ -40,16 +40,4 @@ always @(posedge clk2) begin
 end
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 endmodule

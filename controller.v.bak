@@ -16,10 +16,15 @@ parameter K = T_dot/PERIOD;
 
 nco_advanced #(.K(K))  gen_inst(.clk_in(in_clk), .rst(rst), .clk_out1(clk1), .clk_out2(clk2));
 
+always @(posedge rst) begin
+	cst = 1'b1;
+	ENW = 1'b1;
+	csr = 1'b1;
+	ENR = 1'b1; 
+end
 
 always @(posedge clk2) begin
-	if(DT == 8'hff) begin cst = 0; ENW = 0; 
-	end else begin cst = 1'b1; ENW = 1'b1; end
+	if(DT == 8'hff) begin cst = 0; ENW = 0;	end 
 end
 
 always @(posedge clk2) begin
@@ -27,8 +32,7 @@ always @(posedge clk2) begin
 end
 
 always @(posedge clk2) begin
-	if(DR == 8'hff) begin csr = 0; ENR = 0; 
-	end else begin csr = 1'b1; ENR = 1'b1; end
+	if(DR == 8'hff) begin csr = 0; ENR = 0; end
 end
 
 always @(posedge clk2) begin

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Study/Automatization/Corse work/Corse_work_morse
 vcd
-Z1 !s110 1640038294
+Z1 !s110 1640682620
 !i10b 1
 !s100 QB[29<TW7oI17M1a5_QGY3
 IfeMco47JMD1>?hZg^9>]X2
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1640038294.000000
+Z4 !s108 1640682620.000000
 Z5 !s107 controller_tb.v|controller.v|output_ROM.v|dc.v|IOD.v|cd.v|input_ROM.v|nco_advanced.v|
 Z6 !s90 -reportprogress|300|nco_advanced.v|input_ROM.v|cd.v|IOD.v|dc.v|output_ROM.v|controller.v|controller_tb.v|
 !i113 1
@@ -31,11 +31,11 @@ Z7 tCvgOpt 0
 vcontroller
 R1
 !i10b 1
-!s100 ?91iW[RMEQ18Ia<C;YVP@0
-I>d?O?;UC2mK>BGG^n:9HX2
+!s100 Q3=]FNd1nnEM_Hm;AI<eB3
+IQm^kD>efhA;I@oVo<Ya6O3
 R2
 R0
-w1640036251
+w1640654150
 8controller.v
 Fcontroller.v
 L0 1

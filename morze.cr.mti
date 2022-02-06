@@ -5,13 +5,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	dc
 
-} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/IOD_test.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/IOD_test.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module IOD_tb
-
-Top level modules:
-	IOD_tb
-
 } {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM_tb.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM_tb.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module output_ROM_tb
@@ -19,19 +12,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	output_ROM_tb
 
+} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/cd.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/cd.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cd
+
+Top level modules:
+	cd
+
 } {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/IOD.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/IOD.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module IOD
 
 Top level modules:
 	IOD
-
-} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/dc_tb.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/dc_tb.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module dc_tb
-
-Top level modules:
-	dc_tb
 
 } {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -47,6 +40,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	nco_advanced
 
+} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/controller_tb.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/controller_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module controller_tb
+
+Top level modules:
+	controller_tb
+
 } {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/output_ROM.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module output_ROM
@@ -57,27 +57,6 @@ Top level modules:
 } {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/morse.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/morse.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 
-} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/cd.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/cd.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module cd
-
-Top level modules:
-	cd
-
-} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/controller_tb.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/controller_tb.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module controller_tb
-
-Top level modules:
-	controller_tb
-
-} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM_tb.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM_tb.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module input_ROM_tb
-
-Top level modules:
-	input_ROM_tb
-
 } {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced_tb.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/nco_advanced_tb.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module nco_advanced_tb
@@ -85,18 +64,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	nco_advanced_tb
 
-} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/controller.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/controller.v}
+} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM_tb.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/input_ROM_tb.v}
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module controller
+-- Compiling module input_ROM_tb
 
 Top level modules:
-	controller
-
-} {} {}} {D:/Study/Automatization/Corse work/Corse_work_morse/cd_tb.v} {1 {vlog -work work -stats=none {D:/Study/Automatization/Corse work/Corse_work_morse/cd_tb.v}
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module cd_tb
-
-Top level modules:
-	cd_tb
+	input_ROM_tb
 
 } {} {}}

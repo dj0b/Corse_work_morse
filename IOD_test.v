@@ -23,7 +23,7 @@ nco_advanced #(.K(K))  gen_inst(.clk_in(i_clk), .rst(i_rst), .clk_out1(o_clk1), 
 
 input_ROM rom_inst(.clk(o_clk1), .cs(i_en), .adr(i_adr), .data(o_data));
 
-cd cd_inst(.clk(i_clk), .en(i_en), .x(o_data), .y(o_y));
+cd cd_inst(.clk(i_clk), .x(o_data), .y(o_y));
 
 IOD iod_inst(.clk1(o_clk1), .clk2(o_clk2), .rst(i_rst), .DW(o_y), .ENW(i_en), .DR(o_r), .ENR(i_en), .in(o_out), .out(o_out));
 
